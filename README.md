@@ -4,6 +4,7 @@ JHUCONNECT is a chatbot developed specifically for Jamia Hamdard University, des
 Features
 
 Real-Time Responses: Offers instant replies to user queries.
+
 University-Centric: Provides specific information about Jamia Hamdard University, such as fee structure, course details, admissions, and events.
 
 Dialogflow Integration: Built using Google's Dialogflow platform for natural language understanding.
