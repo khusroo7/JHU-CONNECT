@@ -1,0 +1,11 @@
+Steps to Include:
+Open your website's HTML file (e.g., index.html or main.html) in your project directory.
+Add the following script inside the <body> tag where you want the chatbot to appear:
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;www.himsr.co.in&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;10&#x2F;JH-logo-removebg-preview.png"
+  intent="WELCOME"
+  chat-title="JHUConnect"
+  agent-id="4ab2f16d-f205-4c1a-a790-e13b084a64c4"
+  language-code="en"
+></df-messenger>
