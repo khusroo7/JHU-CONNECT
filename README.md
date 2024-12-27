@@ -23,4 +23,5 @@ Customizable: Can be updated to include new features or adapt to changing univer
 ![Screenshot 2024-11-27 151652](https://github.com/user-attachments/assets/12bb86cd-46ed-41ea-994b-e77089fec78c)
 ![Screenshot 2024-11-27 161007](https://github.com/user-attachments/assets/82620db0-3a7e-469a-9a4c-7afe82f82e52)
 ![Screenshot 2024-11-27 151327](https://github.com/user-attachments/assets/a06d814a-b7db-46ad-9d46-3521c5cceca7)
+![Screenshot 2024-11-27 155750](https://github.com/user-attachments/assets/baa87a73-9728-41f4-830e-b0758b797c10)
 
