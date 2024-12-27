@@ -5,5 +5,7 @@ Features
 
 Real-Time Responses: Offers instant replies to user queries.
 University-Centric: Provides specific information about Jamia Hamdard University, such as fee structure, course details, admissions, and events.
+
 Dialogflow Integration: Built using Google's Dialogflow platform for natural language understanding.
+
 Customizable: Can be updated to include new features or adapt to changing university requirements.
