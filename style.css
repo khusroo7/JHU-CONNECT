@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 50px; /* To prevent content from being hidden behind navbar */
+}
+
+/* Navigation Bar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0d3617;
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+  background-color: #87c792;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url('https://www.himsr.co.in/wp-content/uploads/2022/10/JH-logo-removebg-preview.png'); /* Added the new image URL */
+  background-size: contain; /* Ensures the image fits the section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  padding: 100px 20px;
+  text-align: center;
+  color: rgb(9, 2, 17);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  font-style: italic;  /* Makes the text italic */
+  font-weight: bold;   /* Makes the text bold */
+}
+
+
+
+
+/* Background Animation */
+@keyframes zoomBackground {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtzDAfPicwMNZReiiyHsZhhqABQjO7gQhvvw&s') no-repeat center center/cover;
+  z-index: -1;
+  animation: zoomBackground 20s infinite alternate ease-in-out;
+  opacity: 0.3;
+}
+
+/* Hero Text Animation */
+#hero h1 {
+  font-size: 3em;
+  background: linear-gradient(90deg, #05460b, #0c1946, #050404);
+  background-clip: text; /* Corrected: use background-clip instead of -webkit-background-clip */
+  -webkit-background-clip: text; /* Add -webkit prefix for Safari */
+  color: transparent; /* Set the text color to transparent to allow the gradient to show through */
+  animation: gradientMove 3s linear infinite;
+}
+
+
+@keyframes gradientMove {
+  from {
+      background-position: 0%;
+  }
+  to {
+      background-position: 100%;
+  }
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  animation: slideIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Button Styles */
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: rgb(11, 6, 6);
+  background: #a9afd5;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background: #ffc107;
+  transform: scale(1.1);
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #aab6d2;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Leadership Section */
+#leadership {
+  padding: 50px 20px;
+  text-align: center;
+  background: #ebd096;
+}
+
+#leadership h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#leadership p {
+  font-size: 1.2em;
+  color: #010000;
+}
+
+/* Dialogflow Messenger Customization */
+df-messenger {
+  --df-messenger-button-titlebar-color: #103a12; /* Title bar */
+  --df-messenger-chat-background-color: #ffffff; /* Chat window background */
+  --df-messenger-font-color: #212121; /* Text color */
+  --df-messenger-bot-message: #e8f5e9; /* Bot message bubble */
+  --df-messenger-user-message: #f1f8e9; /* User message bubble */
+}
+
+
+
+
+/* Academics Section */
+#academics {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f6cef4;
+}
+
+#academics h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#academics p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Admissions Section */
+#admissions {
+  padding: 50px 20px;
+  text-align: center;
+  background: #e4d1d1;
+}
+
+#admissions h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#admissions p {
+  font-size: 1.2em;
+  color: #440723;
+}
+
+/* Research Section */
+#research {
+  padding: 50px 20px;
+  text-align: center;
+  background: #08754d;
+}
+
+#research h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#research p {
+  font-size: 1.2em;
+  color: #e9dede;
+}
+
+/* Facilities Section */
+#facilities {
+  padding: 50px 20px;
+  text-align: center;
+  background: #be9898;
+}
+
+#facilities h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#facilities p {
+  font-size: 1.2em;
+  color: #685353;
+}
+
+/* Accreditation & Ranking Section */
+#ranking {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#ranking h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#ranking p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Login Section */
+#login {
+  padding: 50px 20px;
+  text-align: center;
+  background: #ff5722;
+  color: white;
+}
+
+#login h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#login p {
+  font-size: 1.2em;
+  color: rgb(35, 22, 22);
+}
+
+#login .cta-button {
+  background: #ffc107;
+  color: black;
+}
+
+#login .cta-button:hover {
+  background: #ff9800;
+}
