@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamia Hamdard University</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://www.himsr.co.in/wp-content/uploads/2022/10/JH-logo-removebg-preview.png" type="image/png">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#admissions">Admissions & Examination</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#ranking">Accreditation & Ranking</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to Jamia Hamdard</h1>
+    <p>Empowering Education and Research for a Brighter Future</p>
+    <a href="#about" class="cta-button">Learn More</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Jamia Hamdard is dedicated to providing top-notch education and fostering groundbreaking research to create a better tomorrow.</p>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership">
+    <h2>Leadership</h2>
+    <p>Our university thrives under the guidance of visionary leaders who are committed to excellence in education.</p>
+  </section>
+
+  <!-- Academics Section -->
+  <section id="academics">
+    <h2>Academics</h2>
+    <p>Explore our wide range of academic programs designed to empower students for a successful future.</p>
+  </section>
+
+  <!-- Admissions Section -->
+  <section id="admissions">
+    <h2>Admissions & Examination</h2>
+    <p>Learn more about the admission process, eligibility, and examination details.</p>
+    <a href="https://jamiahamdard.edu/UserPanel/DisplayPage.aspx?page=oa&ItemID=ee" class="cta-button">Admissions & Exams</a>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>Our research initiatives aim to solve global challenges and create a sustainable future.</p>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities">
+    <h2>Facilities</h2>
+    <p>State-of-the-art facilities ensure a conducive environment for learning and growth.</p>
+  </section>
+
+  <!-- Accreditation Section -->
+  <section id="ranking">
+    <h2>Accreditation & Ranking</h2>
+    <p>Our prestigious rankings and accreditations speak for our excellence.</p>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login">
+    <h2>Login</h2>
+    <p>Access your Jamia Hamdard account for academic and administrative tasks.</p>
+    <a href="https://jamiahamdard.edu/CPanel/login.aspx" class="cta-button">Login</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+    <p>Email: info@jamiahamdard.edu</p>
+    <p>Phone: +91-1234567890</p>
+  </section>
+
+  <footer>
+    <p>© 2024 Jamia Hamdard University. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Dialogflow Chatbot -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;www.himsr.co.in&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;10&#x2F;JH-logo-removebg-preview.png"
+  intent="WELCOME"
+  chat-title="JHUConnect"
+  agent-id="4ab2f16d-f205-4c1a-a790-e13b084a64c4"
+  language-code="en"
+></df-messenger>
+
+  <script>
+    // Preloader script
+    window.onload = function() {
+      document.getElementById("preloader").style.display = "none";
+    };
+  </script>
+</body>
+</html>
